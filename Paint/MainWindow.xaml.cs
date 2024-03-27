@@ -79,17 +79,6 @@ namespace Paint
                 settings.Color = Brushes.Black;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var dialog = new NewCanvasDialog();
-            var result = dialog.ShowDialog();
 
-            if (result == true)
-            {
-                canvas.Children.Clear();
-                canvas.Width = dialog.CanvasWidth;
-                canvas.Height = dialog.CanvasHeight;
-            }
-        }
     }
 }
