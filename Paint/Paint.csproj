@@ -83,9 +83,6 @@
     </Compile>
     <Compile Include="BrushSettings.cs" />
     <Compile Include="DrawByHandStrategy.cs" />
-    <Compile Include="DrawCircleStrategy.cs" />
-    <Compile Include="DrawLineStrategy.cs" />
-    <Compile Include="DrawSquareStrategy.cs" />
     <Compile Include="IDrawStrategy.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -127,10 +124,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icons\circle.png" />
     <Resource Include="Icons\hand.png" />
-    <Resource Include="Icons\line.png" />
-    <Resource Include="Icons\square.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

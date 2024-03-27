@@ -34,9 +34,6 @@ namespace Paint
             buttonToStrategy = new Dictionary<ToggleButton, IDrawStrategy>();
 
             buttonToStrategy.Add(buttonHand, new DrawByHandStrategy(settings));
-            buttonToStrategy.Add(buttonLine, new DrawLineStrategy(settings));
-            buttonToStrategy.Add(buttonCircle, new DrawCircleStrategy(settings));
-            buttonToStrategy.Add(buttonSquare, new DrawSquareStrategy(settings));
         }
 
         private void Canvas_MouseDown(object sender, MouseButtonEventArgs e)

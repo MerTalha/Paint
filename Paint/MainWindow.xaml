@@ -6,16 +6,9 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         xmlns:local="clr-namespace:Paint"
         mc:Ignorable="d"
-        Title="Paint" MinHeight="360" MinWidth="245" Height="613.6" Width="988.8">
+        >
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Background="#242422">
-            <Button Content="New canvas" Padding="10" BorderThickness="0" Click="Button_Click"></Button>
-        </StackPanel>
+       
 
         <Grid Grid.Row="1" Background="#ededed">
             <Grid.ColumnDefinitions>
@@ -27,35 +20,26 @@
                 <Canvas Name="canvas" Grid.Column="0" Width="720" Height="480" Margin="10" ClipToBounds="True" Background="White" MouseMove="Canvas_MouseMove" MouseDown="Canvas_MouseDown" MouseUp="Canvas_MouseUp"></Canvas>
             </ScrollViewer>
 
-            <Grid Grid.Column="1" Background="#9f9e9c">
+            <Grid Grid.Column="1" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
 
-                <GroupBox Header="Instruments" Padding="5" BorderThickness="0" Margin="0 5 0 0">
-                    <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" Background="#ededed">
+                <GroupBox  Padding="5" BorderThickness="0" Margin="0 5 0 0">
+                    <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" >
                         <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left">
                             <ToggleButton Name="buttonHand" Padding="5" Margin="5" Width="30" Height="30" IsChecked="False" Checked="ButtonInstrument_Checked" Unchecked="ButtonInstrument_Unchecked">
                                 <Image Source="Icons/hand.png"/>
-                            </ToggleButton>
-                            <ToggleButton Name="buttonLine" Padding="5" Margin="5" Width="30" Height="30" IsChecked="False" Checked="ButtonInstrument_Checked" Unchecked="ButtonInstrument_Unchecked">
-                                <Image Source="Icons/line.png"/>
-                            </ToggleButton>
-                            <ToggleButton Name="buttonCircle" Padding="5" Margin="5" Width="30" Height="30" IsChecked="False" Checked="ButtonInstrument_Checked" Unchecked="ButtonInstrument_Unchecked">
-                                <Image Source="Icons/circle.png"/>
-                            </ToggleButton>
-                            <ToggleButton Name="buttonSquare" Padding="5" Margin="5" Width="30" Height="30" IsChecked="False" Checked="ButtonInstrument_Checked" Unchecked="ButtonInstrument_Unchecked">
-                                <Image Source="Icons/square.png"/>
                             </ToggleButton>
                         </WrapPanel>
                     </ScrollViewer>
                 </GroupBox>
 
                 <StackPanel Grid.Row="1" Orientation="Vertical">
-                    <GroupBox Header="Size" BorderThickness="0" Padding="5">
-                        <Grid Background="#ededed">
+                    <GroupBox  BorderThickness="0" Padding="5">
+                        <Grid >
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="auto"/>
